@@ -1,3 +1,145 @@
+// Imports
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500');
+
+// Mixins
+@mixin border-radius ($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin box-sizing () {
+  -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+}
+
+@mixin transition ($seconds) {
+  -webkit-transition: all $seconds linear;
+     -moz-transition: all $seconds linear;
+      -ms-transition: all $seconds linear;
+          transition: all $seconds linear;
+}
+
+// Variables
+$color-background: #f9f9f9;
+$color-black:      #000;
+$color-border:     #f2f2f2;
+$color-link:       #da552f;
+$color-text:       #999;
+$color-white:      #fff;
+$size-14:          14px;
+$size-13:          13px;
+$width-wrapper:    1070px;
+
+// General tags
+a {
+  color: $color-text;
+  font-weight: 400;
+  text-decoration: none;
+
+  &:hover {
+    @include transition(.2s);
+    color: $color-link;
+  }
+}
+
 body {
-  background: #f9f9f9;
+  background: $color-background;
+  color: $color-text;
+  font-family: 'Roboto';
+  font-size: $size-14;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: $color-white;
+
+  #logo {
+    height: 50px;
+    width: 50px;
+  }
+
+  .search-container,
+  nav {
+    margin: 0 auto;
+    width: $width-wrapper;
+  }
+
+  .search-container {
+    height: 50px;
+
+    a {
+      padding: 0 7px;
+    }
+  }
+
+  nav {
+    border-top: 1px solid $color-background;
+    margin-top: 5px;
+
+    ul {
+      background: red;
+      margin: 0;
+      padding: 0;
+
+      li {
+        cursor: pointer;
+        float: left;
+        list-style-type: none;
+        margin: 0 5px 0 0;
+        padding: 16px 20px;
+
+        &:last-child {
+          margin: 0;
+        }
+
+        &.current,
+        &:hover {
+          background: $color-background;
+        }
+
+        &.current {
+          color: $color-black;
+        }
+      }
+    }
+
+    .arrows {
+      @include box-sizing();
+      padding-top: 17px;
+
+      img {
+        width: 14px;
+      }
+    }
+  }
+}
+
+// Classes
+.clearfix {
+  clear: both;
+}
+
+.fleft {
+  float: left;
+}
+
+.fright {
+  float: right;
+}
+
+.txt-search {
+  @include border-radius(3px);
+  @include box-sizing();
+  background: url(./images/search.png) 2px 2px no-repeat;
+  border: 1px solid $color-border;
+  font-size: $size-13;
+  margin: 10px 10px 0 0;
+  outline: 0;
+  padding: 6px 12px 6px 30px;
+  width: calc(100% - 135px);
 }
