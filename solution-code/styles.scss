@@ -4,7 +4,7 @@
 $color-background: #f9f9f9;
 $color-black:      #000;
 $color-border:     #f2f2f2;
-$color-link:       #da552f;
+$color-primary:    #da552f;
 $color-text:       #999;
 $color-white:      #fff;
 $size-14:          14px;
@@ -32,6 +32,26 @@ $width-wrapper:    1070px;
           transition: all $seconds linear;
 }
 
+@mixin txt-input ($width) {
+  @include border-radius(3px);
+  @include box-sizing();
+  border: 1px solid $color-border;
+  font-size: $size-13;
+  margin: 10px 10px 0 0;
+  outline: 0;
+  padding: 6px;
+  width: $width;
+}
+
+@mixin box-content ($width) {
+  @include box-sizing;
+  background: $color-white;
+  border: 1px solid $color-border;
+  margin: 0 0 20px;
+  padding: 10px 15px 15px;
+  width: $width;
+}
+
 // General
 a {
   color: $color-text;
@@ -40,7 +60,7 @@ a {
 
   &:hover {
     @include transition(.2s);
-    color: $color-link;
+    color: $color-primary;
   }
 }
 
@@ -56,6 +76,10 @@ a {
   float: right;
 }
 
+.text-center {
+  text-align: center;
+}
+
 // Main page
 body {
   background: $color-background;
@@ -67,7 +91,7 @@ body {
   padding: 0;
 }
 
-header {
+.header {
   background: $color-white;
   box-shadow: 0 1px 0 0 rgba(0, 0, 0, .05), 0 2px 4px 0 rgba(0, 0, 0, .06);
 
@@ -77,15 +101,9 @@ header {
   }
 
   .txt-search {
-    @include border-radius(3px);
-    @include box-sizing();
+    @include txt-input(calc(100% - 135px));
     background: url(./images/search.png) 2px 2px no-repeat;
-    border: 1px solid $color-border;
-    font-size: $size-13;
-    margin: 10px 10px 0 0;
-    outline: 0;
     padding: 6px 12px 6px 30px;
-    width: calc(100% - 135px);
   }
 
   .search-container,
@@ -141,6 +159,52 @@ header {
       img {
         width: 14px;
       }
+    }
+  }
+}
+
+.main-content {
+  margin: 30px auto;
+  width: $width-wrapper;
+
+  .box {
+    @include box-content(100%);
+
+    strong {
+      color: $color-black;
+      display: inline-block;
+      font-weight: 500;
+      margin: 0 5px;
+    }
+  }
+
+  .txt-subscribe {
+    @include txt-input(200px);
+    margin-left: 15px;
+  }
+
+  .btn-subscribe {
+    @include border-radius(3px);
+    background: $color-primary;
+    border: 1px solid $color-primary;
+    color: $color-white;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 6px 15px;
+    text-transform: uppercase;
+
+    &:hover {
+      background: #ea522a;
+    }
+  }
+
+  .close {
+    float: right;
+    margin: 16px 5px 0 0;
+
+    img {
+      height: 14px;
     }
   }
 }
