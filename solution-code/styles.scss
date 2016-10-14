@@ -1,5 +1,15 @@
-// Imports
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+
+// Variables
+$color-background: #f9f9f9;
+$color-black:      #000;
+$color-border:     #f2f2f2;
+$color-link:       #da552f;
+$color-text:       #999;
+$color-white:      #fff;
+$size-14:          14px;
+$size-13:          13px;
+$width-wrapper:    1070px;
 
 // Mixins
 @mixin border-radius ($radius) {
@@ -22,18 +32,7 @@
           transition: all $seconds linear;
 }
 
-// Variables
-$color-background: #f9f9f9;
-$color-black:      #000;
-$color-border:     #f2f2f2;
-$color-link:       #da552f;
-$color-text:       #999;
-$color-white:      #fff;
-$size-14:          14px;
-$size-13:          13px;
-$width-wrapper:    1070px;
-
-// General tags
+// General
 a {
   color: $color-text;
   font-weight: 400;
@@ -45,6 +44,19 @@ a {
   }
 }
 
+.clearfix {
+  clear: both;
+}
+
+.fleft {
+  float: left;
+}
+
+.fright {
+  float: right;
+}
+
+// Main page
 body {
   background: $color-background;
   color: $color-text;
@@ -62,6 +74,18 @@ header {
   #logo {
     height: 50px;
     width: 50px;
+  }
+
+  .txt-search {
+    @include border-radius(3px);
+    @include box-sizing();
+    background: url(./images/search.png) 2px 2px no-repeat;
+    border: 1px solid $color-border;
+    font-size: $size-13;
+    margin: 10px 10px 0 0;
+    outline: 0;
+    padding: 6px 12px 6px 30px;
+    width: calc(100% - 135px);
   }
 
   .search-container,
@@ -119,29 +143,4 @@ header {
       }
     }
   }
-}
-
-// Classes
-.clearfix {
-  clear: both;
-}
-
-.fleft {
-  float: left;
-}
-
-.fright {
-  float: right;
-}
-
-.txt-search {
-  @include border-radius(3px);
-  @include box-sizing();
-  background: url(./images/search.png) 2px 2px no-repeat;
-  border: 1px solid $color-border;
-  font-size: $size-13;
-  margin: 10px 10px 0 0;
-  outline: 0;
-  padding: 6px 12px 6px 30px;
-  width: calc(100% - 135px);
 }
