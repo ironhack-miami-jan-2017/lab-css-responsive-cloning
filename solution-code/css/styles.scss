@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+@import '_mixins-variables';
+@import '_header';
+@import '_main-content';
+@import '_box-app';
+
+// General
+a {
+  color: $color-text;
+  font-weight: 400;
+  text-decoration: none;
+
+  &:hover {
+    @include transition(.2s);
+    color: $color-primary;
+  }
+}
+
+.clearfix {
+  clear: both;
+}
+
+.fleft {
+  float: left;
+}
+
+.fright {
+  float: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+// Main page
+body {
+  background: $color-background;
+  color: $color-text;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}

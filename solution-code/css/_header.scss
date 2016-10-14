@@ -1,0 +1,71 @@
+#header {
+  background: $color-white;
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, .05), 0 2px 4px 0 rgba(0, 0, 0, .06);
+
+  #logo {
+    height: 50px;
+    width: 50px;
+  }
+
+  .txt-search {
+    @include txt-input(calc(100% - 135px));
+    background: url(../images/search.png) 2px 2px no-repeat;
+    padding: 6px 12px 6px 30px;
+  }
+
+  .search-container,
+  nav {
+    margin: 0 auto;
+    width: $width-wrapper;
+  }
+
+  .search-container {
+    height: 50px;
+
+    a {
+      padding: 0 5px;
+    }
+  }
+
+  nav {
+    border-top: 1px solid $color-background;
+
+    ul {
+      background: red;
+      margin: 0;
+      padding: 0;
+
+      li {
+        cursor: pointer;
+        float: left;
+        font-size: 13px;
+        font-weight: 400;
+        list-style-type: none;
+        margin: 0 5px 0 0;
+        padding: 17px 21px;
+
+        &:last-child {
+          margin: 0;
+        }
+
+        &.current,
+        &:hover {
+          background: $color-background;
+        }
+
+        &.current {
+          color: $color-black;
+        }
+      }
+    }
+
+    .arrows {
+      @include box-sizing();
+      padding-top: 17px;
+
+      img {
+        width: 14px;
+      }
+    }
+  }
+}
