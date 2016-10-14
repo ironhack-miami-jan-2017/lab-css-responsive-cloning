@@ -1,5 +1,5 @@
 // Imports
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
 
 // Mixins
 @mixin border-radius ($radius) {
@@ -57,6 +57,7 @@ body {
 
 header {
   background: $color-white;
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, .05), 0 2px 4px 0 rgba(0, 0, 0, .06);
 
   #logo {
     height: 50px;
@@ -79,7 +80,6 @@ header {
 
   nav {
     border-top: 1px solid $color-background;
-    margin-top: 5px;
 
     ul {
       background: red;
@@ -89,9 +89,11 @@ header {
       li {
         cursor: pointer;
         float: left;
+        font-size: $size-13;
+        font-weight: 400;
         list-style-type: none;
         margin: 0 5px 0 0;
-        padding: 16px 20px;
+        padding: 17px 21px;
 
         &:last-child {
           margin: 0;
