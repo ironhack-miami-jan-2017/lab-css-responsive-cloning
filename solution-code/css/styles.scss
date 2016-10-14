@@ -3,6 +3,7 @@
 @import '_header';
 @import '_main-content';
 @import '_box-app';
+@import 'right-side-box';
 
 // General
 a {
@@ -30,6 +31,23 @@ a {
 
 .text-center {
   text-align: center;
+}
+
+.btn-subscribe,
+.btn-download-kitty {
+  @include border-radius(3px);
+  background: $color-primary;
+  border: 1px solid $color-primary;
+  color: $color-white;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 6px 15px;
+  text-transform: uppercase;
+
+  &:hover {
+    background: #ea522a;
+  }
 }
 
 // Main page

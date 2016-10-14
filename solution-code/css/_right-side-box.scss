@@ -1,0 +1,77 @@
+.aside-contents {
+  .box {
+    padding: 15px 20px;
+  }
+
+  .close {
+    margin: 7px 5px 0 0;
+  }
+
+  .title {
+    color: $color-black;
+    font-size: 19px;
+    font-weight: 300;
+
+    &.small-title {
+      border-bottom: 1px solid $color-border;
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 0;
+      padding-bottom: 15px;
+      text-transform: uppercase;
+    }
+  }
+
+  .aside-header {
+    padding-bottom: 15px;
+  }
+
+  .recommendation {
+    font-size: 15px;
+    font-weight: 300;
+  }
+
+  .btn-download-kitty {
+    width: 100%;
+  }
+
+  .chat-item {
+    margin: 20px 0;
+
+    .speaker-photo {
+      @include border-radius(50%);
+      background: #333;
+      height: 35px;
+      margin: 5px 10px 0 0;
+      width: 35px;
+    }
+
+    .speaker-data {
+      width: calc(100% - 45px);
+
+      .name {
+        color: $color-black;
+        font-weight: 500;
+        margin-bottom: 2px;
+      }
+
+      .role {
+        margin-bottom: 8px;
+      }
+
+      .remind {
+        @include border-radius(4px);
+        background: $color-white;
+        border: 1px solid $color-border;
+        cursor: pointer;
+        outline: 0;
+        padding: 5px 10px;
+        text-transform: uppercase;
+
+        &:hover {
+          background: $color-border;
+        }
+      }
+    }
+  }
+}
