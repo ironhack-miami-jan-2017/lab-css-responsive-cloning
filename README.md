@@ -31,11 +31,15 @@ We will work with the repo we have prepared for you. First of all, you have to g
 
 ### Starter code
 
-The starter code contains the basic structure of an HTML & SCSS project to start working. It also contains the Product Hunt logo in the /images folder.
+The starter code contains the basic structure of an HTML & SCSS project to start working. It also contains the Product Hunt logo in the /images folder, with some other images you may need during the exercise.
 
 Before start doing the project, remember you must have installed the [sass-autocompile](https://atom.io/packages/sass-autocompile) plugin in your atom editor.
 
 We have added one line in the SCSS file that will colorize the `<body>` background. Set the `<body>` font color to white and save the scss file to check out that the compiler is working fine. Once you have checked this out, you can start working on the exercise.
+
+:::info
+Note: For the right side "Upcoming Live Chats" section, you can use a rounded `<div>` to represent the speacker picture.
+:::
 
 ### ViewPorts
 
