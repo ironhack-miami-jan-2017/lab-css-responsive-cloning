@@ -1,0 +1,26 @@
+@media (max-width: 800px) {
+  #header {
+    nav {
+      height: 50px;
+      overflow: hidden;
+      width: calc(100% - 35px);
+
+      .arrows {
+        position: fixed;
+        right: 0;
+      }
+    }
+
+    .txt-search {
+      border-color: #fff;
+    }
+  }
+
+  .main-content {
+    .box {
+      &.subscribe-section {
+        display: none;
+      }
+    }
+  }
+}
