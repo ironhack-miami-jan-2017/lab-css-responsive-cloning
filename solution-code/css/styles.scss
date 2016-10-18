@@ -61,3 +61,25 @@ body {
   margin: 0;
   padding: 0;
 }
+
+@media (max-width: 930px) {
+  #header {
+    nav {
+      ul {
+        li {
+          padding: 17px 1.05vw;
+        }
+      }
+    }
+  }
+
+  .main-content {
+    .box {
+      &.subscribe-section {
+        form {
+          display: block;
+        }
+      }
+    }
+  }
+}

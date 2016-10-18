@@ -1,5 +1,20 @@
-@media (max-width: 1200px) {
+@media (max-width: 1070px) {
+  #header {
+    .search-container,
+    nav {
+      width: 100%;
+
+      ul {
+        li {
+          padding: 17px 1.6vw;
+        }
+      }
+    }
+  }
+
   .main-content {
+    width: 100%;
+    
     .left-section {
       width: 100%;
     }

@@ -17,6 +17,10 @@
 
     &.subscribe-section {
       padding: 10px 15px 15px;
+
+      form {
+        display: inline-block;
+      }
     }
 
     strong {
