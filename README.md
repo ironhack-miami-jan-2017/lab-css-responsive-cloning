@@ -37,9 +37,7 @@ Before start doing the project, remember you must have installed the [sass-autoc
 
 We have added one line in the SCSS file that will colorize the `<body>` background. Set the `<body>` font color to white and save the scss file to check out that the compiler is working fine. Once you have checked this out, you can start working on the exercise.
 
-:::info
-Note: For the right side "Upcoming Live Chats" section, you can use a rounded `<div>` to represent the speacker picture.
-:::
+> **Note:** For the right side "Upcoming Live Chats" section, you can use a rounded `<div>` to represent the speacker picture.
 
 ### ViewPorts
 
