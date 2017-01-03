@@ -1,4 +1,6 @@
-# Responsive Cloning Product Hunt
+![Ironhack Logo](https://i.imgur.com/1QgrNNw.png)
+
+# HTML & CSS | Responsive Cloning Product Hunt
 
 ## Introduction
 
@@ -8,7 +10,7 @@ Product Hunt is one of the best website to keep you updated about trending tech 
 
 ## Exercise
 
-### Requirements
+## Requirements
 
 We will work with the repo we have prepared for you. First of all, you have to get the exercise:
 
@@ -17,7 +19,7 @@ We will work with the repo we have prepared for you. First of all, you have to g
 - Use SASS to create the styles of your page
 - Use Media Queries to create different layouts in your Product Hunt clone
 
-### Submission
+## Submission
 
 - Upon completion, run the following commands
 
@@ -29,7 +31,7 @@ We will work with the repo we have prepared for you. First of all, you have to g
 
 - Navigate to your repo and [create a Pull Request](https://help.github.com/articles/creating-a-pull-request/)
 
-### Starter code
+## Starter code
 
 The starter code contains the basic structure of an HTML & SCSS project to start working. It also contains the Product Hunt logo in the /images folder, with some other images you may need during the exercise.
 
@@ -39,23 +41,23 @@ We have added one line in the SCSS file that will colorize the `<body>` backgrou
 
 > **Note:** For the right side "Upcoming Live Chats" section, you can use a rounded `<div>` to represent the speacker picture.
 
-### ViewPorts
+## ViewPorts
 
 Product Hunt has an interesting Responsive design. We have done four different screenshots representing each of the different layouts you have to reproduce. Pay attention to the small details to see which are the differences between all of them, and be sure you do your best to copy each of this details.
 
-#### LG
+### LG
 ![](https://i.imgur.com/IrOCbjL.png)
 
-#### MD
+### MD
 ![](https://i.imgur.com/nDVp2dv.png)
 
-#### SM
+### SM
 ![](https://i.imgur.com/uudBk5K.png)
 
-#### XS
+### XS
 ![](https://i.imgur.com/s8FpbyH.png)
 
-## Additional Resources
+## Extra Resources
 
 - [Atom editor sass-autocompile](https://atom.io/packages/sass-autocompile)
 - [Use of media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries)
